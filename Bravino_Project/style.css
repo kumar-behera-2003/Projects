@@ -1,0 +1,204 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       body {
+    font-family: Arial, sans-serif;
+    background-color: #0c203b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        /* Main Result Card */
+        .result-card {
+            width: 405px;
+            min-height: 719px;
+            background: #ffffff;
+            border-radius: 0 0 7px 7px;
+            padding: 17px 22px 20px;
+            border-bottom: 2px solid #2864ff;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            border-bottom: 1px solid #d6e3ff;
+            padding-bottom: 14px;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 18px;
+            color: #143b68;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+
+        .tagline {
+            font-size: 8px;
+            color: #54739b;
+            letter-spacing: 1px;
+            margin-bottom: 14px;
+        }
+
+        .header h2 {
+            font-size: 14px;
+            font-weight: normal;
+            color: #164cff;
+            margin-bottom: 5px;
+        }
+
+        .academic-year {
+            font-size: 8px;
+            color: #70839e;
+        }
+
+        /* Section Titles */
+        .section-title {
+            background-color: #dceaff;
+            border-left: 2px solid #2864ff;
+            color: #153c69;
+            font-size: 9px;
+            font-weight: bold;
+            padding: 7px;
+            margin-bottom: 10px;
+            letter-spacing: 0.3px;
+        }
+
+        /* Student Information */
+        .student-info {
+            margin-bottom: 25px;
+        }
+
+        .info-row {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            font-size: 9px;
+            color: #102b4c;
+            padding: 4px 7px;
+        }
+
+        .info-label {
+            font-weight: normal;
+        }
+
+        .info-value::before {
+            content: ": ";
+            margin-right: 3px;
+        }
+
+        /* Marks Table */
+        .performance {
+            margin-bottom: 17px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #bcd3ff;
+            border-radius: 4px;
+            overflow: hidden;
+            font-size: 9px;
+            color: #102b4c;
+        }
+
+        thead {
+            background-color: #17416e;
+            color: white;
+        }
+
+        th {
+            text-align: left;
+            padding: 8px 7px;
+            font-size: 9px;
+        }
+
+        td {
+            padding: 7px;
+            border-bottom: 1px solid #d8e5ff;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            width: 86px;
+        }
+
+        th:nth-child(3),
+        td:nth-child(3) {
+            width: 80px;
+        }
+
+        /* Result Summary */
+        .summary {
+            background: #f0f6ff;
+            border: 1px solid #bcd4ff;
+            border-radius: 5px;
+            padding: 10px 11px;
+            margin-bottom: 15px;
+        }
+
+        .summary-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            font-size: 9px;
+            color: #102b4c;
+            padding: 3px 0;
+        }
+
+        /* Final Result */
+        .final-result {
+            background-color: #dcfce7;
+            border: 1px solid #00b947;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .final-result h4 {
+            font-size: 8px;
+            letter-spacing: 1.5px;
+            color: #087b36;
+            margin-bottom: 5px;
+        }
+
+        .final-result h2 {
+            color: #008c3b;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            border-top: 1px solid #d6e3ff;
+            padding-top: 13px;
+        }
+
+        .footer h4 {
+            font-size: 8px;
+            letter-spacing: 1.3px;
+            color: #17416e;
+            margin-bottom: 6px;
+        }
+
+        .footer p {
+            font-size: 7px;
+            color: #8a9bb4;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 405px) {
+            .result-card {
+                width: 100%;
+                padding: 17px 15px 20px;
+            }
+        }
