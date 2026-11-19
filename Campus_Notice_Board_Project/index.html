@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Notice Board</title>
+
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #102c50;
+        }
+
+        /* Header */
+        header {
+            background-color: #203e63;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+        }
+
+        header h1 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #172f4b;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ffd966;
+        }
+
+        /* Main content */
+        main {
+            width: 90%;
+            max-width: 590px;
+            margin: 18px auto;
+        }
+
+        /* Sections */
+        .section {
+            background-color: white;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+
+        .section h2 {
+            font-size: 14px;
+            padding-bottom: 7px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #203e63;
+        }
+
+        /* Notice and event cards */
+        .item {
+            background-color: #edf2f8;
+            border-left: 3px solid #203e63;
+            padding: 10px;
+            margin-bottom: 8px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item h3 {
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+
+        .item p {
+            font-size: 10px;
+            line-height: 1.5;
+            color: #111;
+            margin-bottom: 5px;
+        }
+
+        .item p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Important links */
+        .links {
+            background-color: #fff3cd;
+        }
+
+        .links h2 {
+            border: none;
+            padding-bottom: 0;
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            display: block;
+            color: #102c50;
+            text-decoration: none;
+            font-size: 11px;
+            margin: 0 0 9px 5px;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+            color: #007bff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #172f4b;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-top: 18px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            main {
+                width: 92%;
+            }
+
+            header h1 {
+                font-size: 18px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 10px;
+            }
+
+            .section {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🏫 Campus Notice Board</h1>
+        <p>Welcome to our College Information Portal</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#notices">Notices</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Latest Notices -->
+        <section class="section" id="notices">
+            <h2>📢 Latest Notices</h2>
+
+            <div class="item">
+                <h3>Exam Registration</h3>
+                <p>
+                    Exam registration starts from Monday.
+                    Students are requested to complete the
+                    registration on time.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>College Holiday</h3>
+                <p>
+                    The college will remain closed on Friday
+                    due to a public holiday.
+                </p>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="section" id="events">
+            <h2>🎉 Upcoming Events</h2>
+
+            <div class="item">
+                <h3>Guest Lecture</h3>
+                <p><strong>Date:</strong> 10 October 2026</p>
+                <p>
+                    <strong>Topic:</strong>
+                    Latest Technologies in Software Development
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>Sports Day</h3>
+                <p><strong>Date:</strong> 15 October 2026</p>
+                <p>
+                    Annual sports competitions will be conducted
+                    on campus.
+                </p>
+            </div>
+        </section>
+
+        <!-- Important Links -->
+        <section class="section links">
+            <h2>🔗 Important Links</h2>
+
+            <a href="#">Exam Cell</a>
+            <a href="#">College Library</a>
+            <a href="#">Student Portal</a>
+            <a href="#">Results</a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2026 Campus Notice Board | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
